@@ -8,6 +8,10 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Podkova:wght@400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,100;1,300&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="/css/style.css" />
     <title>Document</title>
   </head>
@@ -238,9 +242,117 @@
           <!-- <section class="right-login"> -->
           <section class="forms">
             <h3 class="sign_up">Sign up</h3>
-            <a href="#"><button class="start">Start your free trial</button></a>
-            <!-- </section> -->
+            <!-- <a><button class="start">Start your free trial</button></a> -->
+            <form class="form">
+              <a
+                ><input
+                  type="submit"
+                  class="submit"
+                  value="Start Your free trial"
+                  onclick="return checkPassword();"
+              /></a>
+              <input
+                type="email"
+                class="email"
+                placeholder="Your primary email"
+                required
+              />
+              <input
+                id="pass1"
+                type="password"
+                class="email"
+                placeholder="Password"
+                required
+              />
+              <input
+                id="pass2"
+                type="password"
+                class="email"
+                placeholder="Re-type Password"
+                required
+              />
+              <section class="rating">
+                <p class="help">Help us get better</p>
+                <form class="star-rating">
+                  <div class="form-group">
+                    <!-- <label>Ваша оценка</label> -->
+                    <div class="star-rating">
+                      <div class="star-rating__wrap">
+                        <input
+                          class="star-rating__input"
+                          id="star-5"
+                          type="radio"
+                          name="rating"
+                          value="5"
+                        />
+                        <label
+                          class="star-rating__ico fa fa-star-o fa-lg"
+                          for="star-5"
+                          title="Отлично"
+                        ></label>
+                        <input
+                          class="star-rating__input"
+                          id="star-4"
+                          type="radio"
+                          name="rating"
+                          value="4"
+                        />
+                        <label
+                          class="star-rating__ico fa fa-star-o fa-lg"
+                          for="star-4"
+                          title="Хорошо"
+                        ></label>
+                        <input
+                          class="star-rating__input"
+                          id="star-3"
+                          type="radio"
+                          name="rating"
+                          value="3"
+                        />
+                        <label
+                          class="star-rating__ico fa fa-star-o fa-lg"
+                          for="star-3"
+                          title="Удовлетворительно"
+                        ></label>
+                        <input
+                          class="star-rating__input"
+                          id="star-2"
+                          type="radio"
+                          name="rating"
+                          value="2"
+                        />
+                        <label
+                          class="star-rating__ico fa fa-star-o fa-lg"
+                          for="star-2"
+                          title="Плохо"
+                        ></label>
+                        <input
+                          class="star-rating__input"
+                          id="star-1"
+                          type="radio"
+                          name="rating"
+                          value="1"
+                        />
+                        <label
+                          class="star-rating__ico fa fa-star-o fa-lg"
+                          for="star-1"
+                          title="Ужасно"
+                        ></label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <div class="star_line"></div>
+                <div class="already">
+                  <p class="login1">
+                    Already have an account?
+                    <span><a href="" class="login2">Login</a></span>
+                  </p>
+                </div>
+              </section>
+            </form>
           </section>
+          <!-- </section> -->
         </section>
       </section>
       <section class="footer">
@@ -273,5 +385,20 @@
         </section>
       </section>
     </section>
+    <script>
+      function checkPassword() {
+        let password1 = document.getElementById("pass1");
+        let passwordEntered1 = password1.value;
+        let password2 = document.getElementById("pass2");
+        let passwordEntered2 = password2.value;
+        if (passwordEntered1 === passwordEntered2) {
+          document.getElementById("pass1").style.borderColor = "green";
+          document.getElementById("pass2").style.borderColor = "green";
+          return true;
+        }
+        document.getElementById("pass1").style.borderColor = "red";
+        document.getElementById("pass2").style.borderColor = "red";
+      }
+    </script>
   </body>
 </html>

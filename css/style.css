@@ -622,7 +622,6 @@ span {
 .sign_up {
   width: 347px;
   height: 32px;
-
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -632,6 +631,120 @@ span {
   text-align: center;
   color: #160637;
 }
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+input[type="submit"] {
+  padding: 16px;
+  width: 350px;
+  background-color: #722ed1;
+  color: white;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+input[type="email"] {
+  padding: 16px;
+  width: 316px;
+}
+input[type="password"] {
+  padding: 16px;
+  width: 316px;
+}
+.email {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #8989a2;
+}
+.help {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #000000;
+  text-align: center;
+  margin-bottom: 16px;
+}
+/* _________________star_rating__________ */
+.star-rating {
+  font-size: 0;
+}
+.star-rating__wrap {
+  display: inline-block;
+  font-size: 1rem;
+}
+.star-rating__wrap:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.star-rating__ico {
+  float: right;
+  padding-left: 2px;
+  cursor: pointer;
+  color: #ffb300;
+}
+.star-rating__ico:last-child {
+  padding-left: 0;
+}
+.star-rating__input {
+  display: none;
+}
+.star-rating__ico:hover:before,
+.star-rating__ico:hover ~ .star-rating__ico:before,
+.star-rating__input:checked ~ .star-rating__ico:before {
+  content: "\f005";
+}
+.form-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.star_line {
+  width: 336px;
+  border-bottom: 1px solid #c6c6d2;
+  margin-bottom: 16px;
+}
+.login1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #8989a2;
+}
+.login2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  /* Primary/Purple */
+  color: #722ed1;
+}
+.login2:hover {
+  color: #000000;
+}
+.already {
+  height: 16px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+}
+/* ________________________________ */
 .start {
   width: 344px;
   height: 48px;
@@ -659,6 +772,9 @@ span {
   gap: 9.48px;
   align-items: center;
 }
+.lside:hover {
+  scale: 1.2;
+}
 .products {
   font-family: "Roboto";
   font-style: normal;
@@ -681,6 +797,15 @@ span {
   justify-content: space-around;
   align-items: center;
   padding-top: 60px;
+}
+.facebook:hover {
+  scale: 1.2;
+}
+.twitter:hover {
+  scale: 1.2;
+}
+.inst:hover {
+  scale: 1.2;
 }
 /* ...................................... */
 @media (max-width: 767px) {
