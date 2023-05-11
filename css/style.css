@@ -1037,6 +1037,13 @@ input[type="password"] {
   .texting {
     text-align: left;
   }
+  .plan {
+    gap: 20px;
+    overflow-x: scroll;
+  }
+  .plan::-webkit-scrollbar {
+    background-color: inherit;
+  }
   .left-login {
     display: none;
   }
@@ -1064,5 +1071,8 @@ input[type="password"] {
   }
   .pictures {
     padding-top: 35px;
+  }
+  .big-header {
+    justify-content: center;
   }
 }
