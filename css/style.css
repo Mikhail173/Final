@@ -9,12 +9,11 @@ body {
   position: relative;
   overflow: hidden;
   max-width: 1600px;
-  width: 100%;
-  min-height: 4928px;
+  /* width: 100%;
+  min-height: 4928px; */
   height: 100%;
   margin: 0 auto;
   background-color: #fbf9ff;
-  border: 1px solid black;
 }
 .center {
   padding-left: calc(50% - 800px);
@@ -44,17 +43,15 @@ button:hover {
   min-height: 815px;
   height: 100%;
   margin: 0 auto;
-  /* position: absolute; */
+  position: absolute;
   position: relative;
   overflow: hidden;
   margin-bottom: 38px;
-  border: 1px solid black;
 }
 .header {
   max-width: 1181px;
   width: 100%;
   height: 40px;
-  border: 1px solid black;
   margin: 0 auto;
   margin-top: 50px;
   display: flex;
@@ -117,6 +114,7 @@ button:hover {
 .menu-icon {
   display: none;
 }
+
 .menu-header {
   color: #7986ad;
 }
@@ -133,7 +131,7 @@ button:hover {
 .big-header-left {
   width: 550px;
   height: 315px;
-  border: 1px solid black;
+
   margin-top: 152px;
   /* margin-left: 210px; */
   /* margin: 0 auto; */
@@ -212,13 +210,22 @@ button:hover {
   text-align: center;
   /* text / main */
   color: #172755;
-  margin-bottom: 71px;
-  border: 1px solid black;
+  margin-bottom: 30px;
 }
 .mainf {
   width: 620px;
   height: 53px;
   margin-bottom: 30px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+
+  /* text / main */
+
+  color: #172755;
   margin: 0 auto;
 }
 .l {
@@ -271,7 +278,7 @@ button:hover {
 .txt {
   width: 480px;
   height: 232px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 .one {
   width: 1180px;
@@ -281,7 +288,7 @@ button:hover {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 120px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 .h {
   font-family: "Roboto";
@@ -325,10 +332,9 @@ button:hover {
   height: 100%;
   margin: 0 auto;
   position: relative;
-  border: 1px solid black;
 }
 .red {
-  background-image: url("/img/Rectangle\ 7.png");
+  background-image: url("/img/Rectangle7.png");
   max-width: 1600px;
   width: 100%;
   min-height: 245px;
@@ -336,7 +342,7 @@ button:hover {
   margin-top: -20px;
 }
 .black {
-  background-image: url("/img/Rectangle\ 5.png");
+  background-image: url("/img/Rectangle5.png");
   max-width: 1600px;
   width: 100%;
   min-height: 1069px;
@@ -349,7 +355,7 @@ button:hover {
   width: 100%;
   min-height: 656px;
   height: 100%;
-  border: 1px solid white;
+
   padding-top: 272px;
   /* margin-left: 210px; */
   margin: 0 auto;
@@ -357,7 +363,7 @@ button:hover {
 .pricing {
   width: 620px;
   height: 53px;
-  border: 1px solid white;
+
   margin-bottom: 30px;
   padding-bottom: 30px;
   margin: 0 auto;
@@ -374,7 +380,7 @@ button:hover {
   max-width: 1060px;
   width: 100%;
   height: 63px;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   margin-bottom: 80px;
   font-family: "Roboto";
   font-style: normal;
@@ -520,7 +526,7 @@ span {
   height: 100%;
   margin: 0 auto;
   background-color: #fbf9ff;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 .central {
   max-width: 962px;
@@ -529,7 +535,7 @@ span {
   margin: 109px auto;
   display: flex;
   gap: 46px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 .see-why {
   width: 431px;
@@ -544,7 +550,6 @@ span {
   /* or 125% */
   color: #160637;
   margin-bottom: 75px;
-  border: 1px solid black;
 }
 .trust {
   font-family: "Roboto";
@@ -571,7 +576,6 @@ span {
 .logs {
   width: 306.43px;
   height: 156.15px;
-  border: 1px solid black;
 }
 .l1 {
   width: 134px;
@@ -601,7 +605,7 @@ span {
   height: 480px; */
   /* margin-top: 40px; */
   background-color: #f7eefd;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 .forms {
   width: 428px;
@@ -616,7 +620,7 @@ span {
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   box-shadow: 0px 56px 5px 25px rgba(251, 239, 255, 1);
 }
 .sign_up {
@@ -823,14 +827,13 @@ input[type="password"] {
     height: 100%;
     margin: 0 auto;
     background-color: #fbf9ff;
-    border: 1px solid black;
   }
   .logo {
     width: 184.02px;
     height: 30px;
   }
   .angle {
-    background-image: url("/img/background-top.png");
+    background-image: url("img/background-top.png");
     max-width: 767px;
     width: 100%;
     height: 815px;
@@ -839,13 +842,12 @@ input[type="password"] {
     position: relative;
     overflow: hidden;
     margin-bottom: 38px;
-    border: 1px solid black;
   }
   .header {
     max-width: 767px;
     width: 100%;
     height: 40px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 0 auto;
     margin-top: 20px;
     display: flex;
@@ -1076,3 +1078,4 @@ input[type="password"] {
     justify-content: center;
   }
 }
+/* -------------------------------------------------burger */
